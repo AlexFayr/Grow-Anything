@@ -122,7 +122,7 @@ task.spawn(function()
     end
 end)
 local function getPlayerNames() local names = {} for _, p in pairs(Players:GetPlayers()) do if p ~= Player then table.insert(names, p.Name) end end return names end
-local Window = Fluent:CreateWindow({Title = "Garden Ultimate Hub", SubTitle = "v7.0 - Configs & Langs", TabWidth = 130, Size = UDim2.fromOffset(480, 440), Theme = "Dark"})
+local Window = Fluent:CreateWindow({Title = "TG - @AlexFayrScript", SubTitle = "v7.0 - Configs & Langs", TabWidth = 130, Size = UDim2.fromOffset(480, 440), Theme = "Dark"})
 local Tabs = {Main = Window:AddTab({Title = "Farm", Icon = "home"}), Shop = Window:AddTab({Title = "Shop", Icon = "shopping-cart"}), Player = Window:AddTab({Title = "Player", Icon = "user"}), Settings = Window:AddTab({Title = "Settings", Icon = "settings"})}
 UI_Elements.MainTab, UI_Elements.ShopTab, UI_Elements.PlayerTab, UI_Elements.SettingsTab = Tabs.Main, Tabs.Shop, Tabs.Player, Tabs.Settings
 UI_Elements.AutofarmToggle = Tabs.Main:AddToggle("AutofarmToggle", {Title = "Enable Conveyor Autofarm", Default = false, Callback = function(Value) Config.Autofarm = Value end})
